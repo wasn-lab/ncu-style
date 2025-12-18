@@ -5,13 +5,13 @@ The project hosts an aesthetic and simple LaTeX style suitable for "preprint" pu
 
 ## Usage:
 1. Use Document class **article**. 
-2. Copy **ncu.sty** to the folder containing your tex file.
+2. Copy **ncu.cls** to the folder containing your tex file.
 3. change `\documentclass{article}` to `\documentclass[]{ncu}`.
 
 See **paper.tex** 
 
 ## Project files:
-1. **ncu.sty** - the style file.
+1. **ncu.cls** - the class file.
 2. **paper.tex** - a sample template that uses the **ncu style**.
 3. **paper.bib** - the bibliography source file for paper.tex.
 4. **paper.pdf** - a sample output of the template file that demonstrated the design provided by the ncu style.
