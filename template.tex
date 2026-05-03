@@ -1,13 +1,11 @@
-\documentclass[]{ncu}
-% Option "twocolumn" available, but please prioritize single-column
-
+\documentclass[]{ncu}		% Option "twocolumn" available
 
 \usepackage[utf8]{inputenc} % allow utf-8 input
 \usepackage[T1]{fontenc}    % use 8-bit T1 fonts
 \usepackage{url}            % simple URL typesetting
 \usepackage{booktabs}       % professional-quality tables
 \usepackage{mathtools}
-\usepackage{amssymb,amsthm}
+\usepackage{amssymb, amsthm}
 \usepackage{amsfonts}       % blackboard math symbols
 \usepackage{nicefrac}       % compact symbols for 1/2, etc.
 \usepackage{microtype}      % microtypography
@@ -33,7 +31,10 @@
 \usepackage{tabularx}
 \usepackage{hyperref}
 \usepackage{cleveref}
-
+\usepackage{verbatim}
+\usepackage{textcomp, gensymb}
+\usepackage{mathrsfs}
+\usepackage{epigraph}
 
 \newlength\savewidth\newcommand\shline{\noalign{\global\savewidth\arrayrulewidth \global\arrayrulewidth 1pt}\hline\noalign{\global\arrayrulewidth\savewidth}}
 \newcommand{\tablestyle}[2]{\setlength{\tabcolsep}{#1}\renewcommand{\arraystretch}{#2}\centering\footnotesize}
@@ -45,7 +46,6 @@
 \setlength{\abovecaptionskip}{1pt}
 
 \renewcommand{\paragraph}[1]{\vspace{1.25mm}\noindent\textbf{#1}}
-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % THEOREMS
@@ -60,13 +60,6 @@
 \newtheorem{assumption}[theorem]{Assumption}
 \theoremstyle{remark}
 \newtheorem{remark}[theorem]{Remark}
-
-
-\newcommand{\eu}{\mathrm{e}\mkern1mu}
-\newcommand{\ramuno}{\mathrm{i}\mkern1mu}
-\newcommand{\diff}{\mathop{}\!\mathrm{d}}
-\DeclareMathOperator{\sinc}{sinc}
-
 
 \definecolor{codeblue}{rgb}{0.25, 0.5, 0.5}
 \definecolor{codekw}{rgb}{0.35, 0.35, 0.75}
@@ -83,7 +76,6 @@
     keywordstyle = \color{codekw},
 }
 
-
 \definecolor{green}{HTML}{009000}
 \definecolor{red}{HTML}{ea4335}
 \newcommand{\better}[1]{\textcolor{green}{$\uparrow\,$#1}}
@@ -91,17 +83,19 @@
 \newcommand{\betterinv}[1]{\textcolor{green}{$\downarrow\,$#1}}
 \newcommand{\worseinv}[1]{\textcolor{red}{$\uparrow\,$#1}}
 
+\newcommand{\eu}{\mathrm{e}\mkern1mu}
+\newcommand{\ramuno}{\mathrm{i}\mkern1mu}
+\newcommand{\diff}{\mathop{}\!\mathrm{d}}
+\DeclareMathOperator{\sinc}{sinc}
+
 
 \title{Template for Preprints with NCU-Style}
-
 
 \author[1]{Author1}
 \author[2]{Author2}
 
-
 \affiliation[1]{Affiliation}
 \affiliation[2]{Affiliation}
-
 
 \abstract{
 \lipsum[1]
@@ -109,16 +103,14 @@
 
 \metadata[Code]{{\href{URL}{\texttt{URL}}}}
 \metadata[Correspondence]{Author (\email{email})}
-% \date{\today}
+\date{\today}
 \begin{document}
 
 \maketitle
 
-
 \section{Introduction}
 \lipsum[2]
 \lipsum[3]
-
 
 \section{Headings: first level}
 \label{sec:headings}
@@ -136,8 +128,6 @@
 
 \paragraph{Paragraph}
 \lipsum[7]
-
-
 
 \section{Examples of citations, figures, tables, references}
 \label{sec:others}
@@ -170,7 +160,6 @@ The documentation for \verb+booktabs+ (`Publication quality tables in LaTeX') is
 	\url{https://www.ctan.org/pkg/booktabs}
 \end{center}
 
-
 \begin{table}
 	\caption{Sample table title}
 	\centering
@@ -198,6 +187,6 @@ The documentation for \verb+booktabs+ (`Publication quality tables in LaTeX') is
 \clearpage
 
 \bibliographystyle{assets/plainnat}
-\bibliography{paper}
+\bibliography{references}
 
 \end{document}
