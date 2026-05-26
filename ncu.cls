@@ -60,7 +60,7 @@
 \titleformat*{\section}{\Large\sffamily\bfseries}
 \titleformat*{\subsection}{\large\sffamily\bfseries}
 \titleformat*{\subsubsection}{\normalsize\sffamily\bfseries}
-\DeclareTextFontCommand{\textbf}{\bfseries\sffamily}
+% \DeclareTextFontCommand{\textbf}{\bfseries\sffamily}
 
 \RequirePackage{caption}
 \DeclareCaptionLabelSeparator{custom}{}
