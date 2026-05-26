@@ -68,20 +68,12 @@
 \captionsetup{singlelinecheck=false,format=custom,labelsep=custom,font=small}
 \captionsetup[sub]{singlelinecheck=true,format=custom,labelsep=custom,font=small}
 
-% Meta custom fonts %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% http://c.caignaert.free.fr/Install-ttf-Font.pdf
+% Fonts %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-% \renewcommand*\ttdefault{cmvtt}
 \RequirePackage[T1]{fontenc}
-
-% \pdfmapline{+optimistic < assets/Optimistic.ttf <T1-WGL4.enc}
-% \renewcommand{\sfdefault}{optimistic}
-
-\DeclareFontFamily{T1}{optimistic}{}
-\DeclareFontShape{T1}{optimistic}{m}{n}{<-> s * [0.88] assets/optimistic}{}
-\DeclareFontShape{T1}{optimistic}{b}{n}{<-> s * [0.88] assets/optimistic}{}
-\pdfmapline{+optimistic < assets/Optimistic.ttf <T1-WGL4.enc}
-\renewcommand{\sfdefault}{optimistic}
+\RequirePackage{lmodern}
+\RequirePackage[scaled=0.95]{FiraSans}
+\RequirePackage[scaled=0.92]{sourcecodepro}
 
 % Authors, affiliations, infos %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -120,7 +112,6 @@
 \newcommand{\beginappendix}{\appendix{\huge\sffamily Appendix\par}}
 
 % Titlebox %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 
 \newcommand{\mymaketitle}{%
   \tcbset{enhanced,frame hidden}
