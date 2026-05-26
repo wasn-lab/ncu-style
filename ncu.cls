@@ -72,8 +72,8 @@
 
 \RequirePackage[T1]{fontenc}
 \RequirePackage{lmodern}
-\RequirePackage[scaled=0.95]{FiraSans}
-\RequirePackage[scaled=0.92]{sourcecodepro}
+\RequirePackage[scale=0.95, semibold]{plex-sans}
+\RequirePackage[scale=0.92]{plex-mono}
 
 % Authors, affiliations, infos %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
