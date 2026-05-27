@@ -1,40 +1,36 @@
-\documentclass[]{ncu}		% Option "twocolumn" available
+\documentclass[table,dvipsnames]{ncu}       % Option "twocolumn" available
 
-\usepackage[utf8]{inputenc} % allow utf-8 input
-\usepackage[T1]{fontenc}    % use 8-bit T1 fonts
-\usepackage{url}            % simple URL typesetting
-\usepackage{booktabs}       % professional-quality tables
-\usepackage{mathtools}
-\usepackage{amssymb, amsthm}
-\usepackage{amsfonts}       % blackboard math symbols
-\usepackage{nicefrac}       % compact symbols for 1/2, etc.
-\usepackage{microtype}      % microtypography
 \usepackage{silence}
 \WarningFilter{latex}{Command \showhyphens}
-\usepackage{lipsum}         % Can be removed after putting your text content
-\usepackage{graphicx}
-\usepackage{natbib}
-\usepackage{bm}
-\usepackage{physics}
-\usepackage{diagbox}
-\usepackage{multirow}
-\usepackage{adjustbox}
-\usepackage{xcolor}
-\usepackage{listings}
-\usepackage{upgreek}
-\usepackage{makecell}
-\usepackage{algorithm}
-\usepackage{algorithmic}
-\usepackage{threeparttable}
-\usepackage{colortbl}
-\usepackage{wrapfig}
-\usepackage{tabularx}
-\usepackage{hyperref}
-\usepackage{cleveref}
-\usepackage{verbatim}
-\usepackage{textcomp, gensymb}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{mathtools}
+\usepackage{nicefrac}
 \usepackage{mathrsfs}
+\usepackage{dsfont}
+\usepackage{upgreek}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage{listings}
+\usepackage{array}
+\usepackage{makecell}
+\usepackage{adjustbox}
+\usepackage{tabularx}
+\usepackage{diagbox}
+\usepackage{longtable}
+\usepackage{siunitx}
+\usepackage{wrapfig}
+\usepackage{float}
+\usepackage{pifont}
+\usepackage{fontawesome5}
+\usepackage{bbding}
+\usepackage{enumitem}
+\usepackage{xspace}
+\usepackage{url}
+\usepackage{textcomp}
 \usepackage{epigraph}
+\usepackage{gensymb}
 
 \newlength\savewidth\newcommand\shline{\noalign{\global\savewidth\arrayrulewidth \global\arrayrulewidth 1pt}\hline\noalign{\global\arrayrulewidth\savewidth}}
 \newcommand{\tablestyle}[2]{\setlength{\tabcolsep}{#1}\renewcommand{\arraystretch}{#2}\centering\footnotesize}
@@ -64,18 +60,17 @@
 \definecolor{codeblue}{rgb}{0.25, 0.5, 0.5}
 \definecolor{codekw}{rgb}{0.35, 0.35, 0.75}
 \lstdefinestyle{Pytorch}{
-    language = Python,
+    language        = Python,
     backgroundcolor = \color{white},
-    basicstyle = \fontsize{9pt}{8pt}\selectfont\ttfamily\bfseries,
-    columns = fullflexible,
-    aboveskip=1pt,
-    belowskip=1pt,
-    breaklines = true,
-    captionpos = b,
-    commentstyle = \color{codeblue},
-    keywordstyle = \color{codekw},
+    basicstyle      = \fontsize{9pt}{8pt}\selectfont\ttfamily\bfseries,
+    columns         = fullflexible,
+    aboveskip       = 1pt,
+    belowskip       = 1pt,
+    breaklines      = true,
+    captionpos      = b,
+    commentstyle    = \color{codeblue},
+    keywordstyle    = \color{codekw},
 }
-
 \definecolor{green}{HTML}{009000}
 \definecolor{red}{HTML}{ea4335}
 \newcommand{\better}[1]{\textcolor{green}{$\uparrow\,$#1}}
@@ -100,8 +95,8 @@
 \lipsum[1]
 }
 
-\metadata[Code]{{\href{URL}{\texttt{URL}}}}
-\metadata[Correspondence]{Author (\email{email})}
+\ncudata[Code]{{\href{URL}{\texttt{URL}}}}
+\ncudata[Correspondence]{Author (\email{email})}
 \date{\today}
 \begin{document}
 

@@ -29,6 +29,7 @@
 \RequirePackage{nicematrix}
 \RequirePackage{multirow}
 \RequirePackage{bm}
+\RequirePackage{threeparttable}
 \newcommand{\nm}[1]{#1}
 
 % Colorful stuff %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -61,6 +62,10 @@
 \titleformat*{\subsection}{\large\sffamily\bfseries}
 \titleformat*{\subsubsection}{\normalsize\sffamily\bfseries}
 % \DeclareTextFontCommand{\textbf}{\bfseries\sffamily}
+
+\newcommand{\subsubsubsection}[1]{\paragraph{#1}\mbox{}\\}
+\setcounter{secnumdepth}{4}
+\setcounter{tocdepth}{4}
 
 \RequirePackage{caption}
 \DeclareCaptionLabelSeparator{custom}{}
@@ -97,15 +102,15 @@
 \newcommand\contributionformat[2][]{{\small $^{#1}$#2}}
 \newcommand\contribution[2][]{\addtolist[#1]{#2}{\contributionlist}{\contributionformat}{, }}
 
-\newcommand\metadatalist{}
-\newcommand\metadataformat[2][]{{\small {\sffamily \bfseries #1:} #2}}
-\newcommand\metadata[2][]{\addtolist[#1]{#2}{\metadatalist}{\metadataformat}{\par}}
+\newcommand\ncudatalist{}
+\newcommand\ncudataformat[2][]{{\small {\sffamily \bfseries #1:} #2}}
+\newcommand\ncudata[2][]{\addtolist[#1]{#2}{\ncudatalist}{\ncudataformat}{\par}}
 
 \renewcommand{\abstract}[1]{\def\abstractlist{{\color{ncufg} #1}}}
 \newcommand{\email}[1]{\href{mailto:#1}{\texttt{#1}}}
 
-\renewcommand\date[1]{\metadata[Date]{#1}}
-\newcommand\correspondence[1]{\metadata[Correspondence]{#1}}
+\renewcommand\date[1]{\ncudata[Date]{#1}}
+\newcommand\correspondence[1]{\ncudata[Correspondence]{#1}}
 
 \renewcommand{\title}[1]{\newcommand{\titlelist}{{\huge\sffamily\bfseries #1}}}
 
@@ -129,7 +134,7 @@
         anchor=south east,
         at= (frame.south east),
         xshift=-0.5cm,
-        yshift=0.5cm] {\includegraphics[width=1.5cm]{assets/logoncu.pdf}};}
+        yshift=0.5cm] {\includegraphics[width=1.5cm]{assets/logo_ncu.pdf}};}
   }
   
   \begin{tcolorbox}
@@ -160,7 +165,7 @@
     %
     {
       \setlength{\parskip}{0cm}
-      \ifdefempty{\metadatalist}{\vspace*{0.65cm}}{\metadatalist\par}
+      \ifdefempty{\ncudatalist}{\vspace*{0.65cm}}{\ncudatalist\par}
     }
   \end{tcolorbox}
   \tcbset{reset}
