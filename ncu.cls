@@ -107,10 +107,14 @@
 \newcommand\ncudata[2][]{\addtolist[#1]{#2}{\ncudatalist}{\ncudataformat}{\par}}
 
 \renewcommand{\abstract}[1]{\def\abstractlist{{\color{ncufg} #1}}}
-\newcommand{\email}[1]{\href{mailto:#1}{\texttt{#1}}}
+\AtBeginDocument{\urlstyle{tt}}
+\newcommand{\code}[1]{\texttt{#1}}
+\newcommand{\codeurl}[1]{\href{#1}{\nolinkurl{#1}}}
+\newcommand{\email}[1]{\href{mailto:#1}{\nolinkurl{#1}}}
 
 \renewcommand\date[1]{\ncudata[Date]{#1}}
 \newcommand\correspondence[1]{\ncudata[Correspondence]{#1}}
+\newcommand\codelink[1]{\ncudata[Code]{\codeurl{#1}}}
 
 \renewcommand{\title}[1]{\newcommand{\titlelist}{{\huge\sffamily\bfseries #1}}}
 
