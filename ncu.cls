@@ -18,6 +18,11 @@
 
 \DisableLigatures[f]{family=sf*} 
 
+% Math %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{mathtools}
+
 % Graphics %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \RequirePackage{graphicx}
@@ -61,7 +66,7 @@
 \titleformat*{\section}{\Large\sffamily\bfseries}
 \titleformat*{\subsection}{\large\sffamily\bfseries}
 \titleformat*{\subsubsection}{\normalsize\sffamily\bfseries}
-% \DeclareTextFontCommand{\textbf}{\bfseries\sffamily}
+\DeclareTextFontCommand{\textbf}{\bfseries\sffamily}
 
 \newcommand{\subsubsubsection}[1]{\paragraph{#1}\mbox{}\\}
 \setcounter{secnumdepth}{4}
@@ -77,7 +82,7 @@
 
 \RequirePackage[T1]{fontenc}
 \RequirePackage{lmodern}
-\RequirePackage[scale=0.92, semibold]{plex-sans}
+\RequirePackage[scale=0.95, semibold]{plex-sans}
 \RequirePackage[scale=0.92]{plex-mono}
 
 % Authors, affiliations, infos %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
