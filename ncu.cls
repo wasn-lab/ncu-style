@@ -120,6 +120,8 @@
 \renewcommand\date[1]{\ncudata[Date]{#1}}
 \newcommand\correspondence[1]{\ncudata[Correspondence]{#1}}
 \newcommand\codelink[1]{\ncudata[Code]{\codeurl{#1}}}
+\newcommand\preprintformat[2][]{{\small\sffamily\bfseries #2}}
+\newcommand\preprint[1]{\addtolist{#1}{\ncudatalist}{\preprintformat}{\par}}
 
 \renewcommand{\title}[1]{\newcommand{\titlelist}{{\huge\sffamily\bfseries #1}}}
 
