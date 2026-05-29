@@ -142,8 +142,8 @@
     overlay={\node[
         anchor=south east,
         at= (frame.south east),
-        xshift=-0.5cm,
-        yshift=0.5cm] {\includegraphics[width=1.5cm]{assets/logo_ncu.pdf}};}
+        xshift=-0.35cm,
+        yshift=0.1cm] {\includegraphics[width=1.5cm]{assets/logo_ncu.pdf}};}
   }
   
   \begin{tcolorbox}
