@@ -43,7 +43,7 @@
 \RequirePackage{xcolor}
 \definecolor{ncublue}{HTML}{00609A}
 \definecolor{ncufg}{HTML}{1C2B33}
-\definecolor{ncubg}{HTML}{F1F4F7}
+\definecolor{ncubg}{HTML}{F2F2F5}
 
 % References %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -144,8 +144,8 @@
     overlay={\node[
         anchor=south east,
         at= (frame.south east),
-        xshift=-0.37cm,
-        yshift=0.11cm] {\includegraphics[width=1.5cm]{assets/logo_ncu.pdf}};}
+        xshift=-0.30cm,
+        yshift=-0.12cm] {\includegraphics[width=2.2cm]{assets/logo_ncu.pdf}};}
   }
   
   \begin{tcolorbox}
