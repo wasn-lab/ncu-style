@@ -43,7 +43,7 @@
 \RequirePackage{xcolor}
 \definecolor{ncublue}{HTML}{00609A}
 \definecolor{ncufg}{HTML}{1C2B33}
-\definecolor{ncubg}{HTML}{F2F2F5}
+\definecolor{ncubg}{HTML}{F5F5F5}
 
 % References %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
