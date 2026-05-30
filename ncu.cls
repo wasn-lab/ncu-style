@@ -82,7 +82,7 @@
 
 \RequirePackage[T1]{fontenc}
 \RequirePackage{lmodern}
-\RequirePackage[scale=0.95, semibold]{plex-sans}
+\RequirePackage[scale=0.92, semibold]{plex-sans}
 \RequirePackage[scale=0.92]{plex-mono}
 
 % Authors, affiliations, infos %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -125,7 +125,7 @@
 
 \renewcommand{\title}[1]{\newcommand{\titlelist}{{\huge\sffamily\bfseries #1}}}
 
-\newcommand{\beginappendix}{\appendix{\huge\sffamily Appendix\par}}
+\newcommand{\beginappendix}{\appendix{\huge\sffamily\bfseries Appendix\par}}
 
 % Titlebox %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
