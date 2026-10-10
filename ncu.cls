@@ -48,6 +48,7 @@
 % References %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \RequirePackage{hyperref}
+\RequirePackage{xurl}
 \RequirePackage[noabbrev,nameinlink]{cleveref}
 \hypersetup{
   colorlinks,
